@@ -38,7 +38,8 @@ var target = {
 $("#img").click(function(event) {
 	clicks--;
 	if (clicks === -1) {
-		alert("GAME OVER(((")
+		alert("GAME OVER(((");
+		clicks = 0;
 	}
 	var distance = getDistance(event, target);
 	var distanceHint = getDistanceHint(distance);
